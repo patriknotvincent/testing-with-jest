@@ -26,3 +26,12 @@ test('two pops on stack with two elements returns the first element added', () =
     expect(res).toBeDefined();
     expect(res).toBe(1)
 });
+
+test('one million pushes to the stack and one pop returns the last element added', () => {
+    for(let i = 0; i < 1000001; i++) {
+        stack.push(i)
+    }
+    let res = stack.pop()
+    expect(res).toBeDefined();
+    expect(res).toBe(1000000)
+});
