@@ -9,17 +9,11 @@
   "scripts": {
     "test": "jest tests"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/patriknotvincent/testing-with-jest.git"
-  },
-  "author": "Patriknotvincent",
+  "author": "Vincent Parik Westlund",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/patriknotvincent/testing-with-jest/issues"
-  },
-  "homepage": "https://github.com/patriknotvincent/testing-with-jest#readme",
   "dependencies": {
+    "geckodriver": "^4.4.0",
+    "selenium-webdriver": "^4.20.0",
     "underscore": "^1.13.6"
   },
   "devDependencies": {
