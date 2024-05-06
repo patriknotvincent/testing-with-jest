@@ -1,18 +1,18 @@
-import _ from 'underscore';
+const _ = require('underscore');
 
 let stack = [];
 
 // Lägger ett element överst i stacken
-export function push (x) {
+exports.push = function (x) {
     stack.push(x);
-}
+};
 
 // Returnerar det översta elementet i stacken och tar bort det
-export function pop () {
+exports.pop = function () {
     return stack.pop();
 }
 
 // Returnerar det översta elementet i stacken
-export function peek () {
-    return _.last(stack);
+exports.peek = function () {
+    return _.last(stack); // Det här är medvetet felaktigt
 }
