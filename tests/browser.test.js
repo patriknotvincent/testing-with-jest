@@ -34,11 +34,10 @@ describe('Clicking "Pusha till stacken"', () => {
 });
 
 describe('Clicking "Poppa stacken"', () => {
-	it('should open a prompt box', async () => {
+	it('should open a dialog box', async () => {
 		let push = await driver.findElement(By.id('pop'));
 		await push.click();
 		let alert = await driver.switchTo().alert();
-		await alert;
 		await alert.accept();
 	});
 });
